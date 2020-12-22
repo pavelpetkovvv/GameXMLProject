@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>	
+<Cards>
+   <Texts>
+	<Text>
+	  <TextPhrase>Memoria minuitur, nisi eam exerceas</TextPhrase>
+	  <TextMeaning>Паметта отслабва, ако не я упражняваш</TextMeaning>
+	</Text>
+	<Text>
+	  <TextPhrase>Memoria necessarium vitae bonum est</TextPhrase>
+	  <TextMeaning>Паметта е необходимо благо за живота</TextMeaning>
+	</Text>
+	<Text>
+	  <TextPhrase>Mendacem memorem esse oportet</TextPhrase>
+	  <TextMeaning>Лъжецът трябва да помни какво говори</TextMeaning>
+	</Text>
+	<Text>
+	  <TextPhrase>Mendaci homini ne vera quidem dicenti credimus</TextPhrase>
+	  <TextMeaning>На лъжеца не вярваме дори тогава, когато говори истината</TextMeaning>
+	</Text>
+   </Texts>
+</Cards>
