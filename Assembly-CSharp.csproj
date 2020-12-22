@@ -56,14 +56,18 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Resources\Text_scr.cs" />
     <Compile Include="Assets\Resources\TextsContainer.cs" />
-    <Compile Include="Assets\Resources\TextsLoader.cs" />
-    <Compile Include="Assets\Resources\InstantiatingPanels.cs" />
-    <Compile Include="Assets\Resources\ChangeText.cs" />
+    <Compile Include="Assets\Resources\Text_scr.cs" />
     <Compile Include="Assets\Resources\RemainingTime.cs" />
+    <Compile Include="Assets\Resources\TextsLoader.cs" />
+    <Compile Include="Assets\Resources\ChangeText.cs" />
+    <Compile Include="Assets\Resources\InstantiatingPanels.cs" />
+    <Compile Include="Assets\Resources\Question.cs" />
+    <Compile Include="Assets\Resources\QuestionsContainer.cs" />
+    <Compile Include="Assets\Resources\QuestionsLoader.cs" />
   </ItemGroup>
   <ItemGroup>
+     <None Include="Assets\Resources\Questions.xml.txt" />
      <None Include="Assets\Resources\Texts.xml.txt" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.1.14f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>

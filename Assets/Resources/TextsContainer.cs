@@ -12,7 +12,8 @@ public class TextsContainer
     [XmlArrayItem("Text")]
     public List<Text_scr> texts = new List<Text_scr>();
 
-    public static TextsContainer Load(string path)
+
+    public static TextsContainer Load(string path)//method for initializing "texts" list by reading from xml file
     {
         TextAsset _xml = Resources.Load<TextAsset>(path);
 

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<QuestionCards>
+     <Questions>
+       <Question>
+           <QuestionText>Какво означава: Memoria minuitur, nisi eam exerceas</QuestionText>
+           <CorrectAnswer>Паметта отслабва, ако не я упражняваш</CorrectAnswer>
+              <IncorrectAnswers>
+                <IncorrectAnswer>Паметта е необходимо благо за живота</IncorrectAnswer>
+                <IncorrectAnswer>Лъжецът трябва да помни какво говори</IncorrectAnswer>
+                <IncorrectAnswer>На лъжеца не вярваме дори тогава, когато говори истината</IncorrectAnswer>
+              </IncorrectAnswers>
+       </Question>
+       <Question>
+           <QuestionText>Какво означава: Mendacem memorem esse oportet</QuestionText>
+           <CorrectAnswer>Лъжецът трябва да помни какво говори</CorrectAnswer>
+              <IncorrectAnswers>
+                <IncorrectAnswer>Паметта е необходимо благо за живота</IncorrectAnswer>
+                <IncorrectAnswer>Паметта отслабва, ако не я упражняваш</IncorrectAnswer>
+                <IncorrectAnswer>На лъжеца не вярваме дори тогава, когато говори истината</IncorrectAnswer>
+              </IncorrectAnswers>
+       </Question>
+     </Questions>
+</QuestionCards>
