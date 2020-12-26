@@ -19,5 +19,14 @@
                 <IncorrectAnswer>На лъжеца не вярваме дори тогава, когато говори истината</IncorrectAnswer>
               </IncorrectAnswers>
        </Question>
+       <Question>
+           <QuestionText>Какво означава: Mendaci homini ne vera quidem dicenti credimus</QuestionText>
+           <CorrectAnswer>На лъжеца не вярваме дори тогава, когато говори истината</CorrectAnswer>
+              <IncorrectAnswers>
+                <IncorrectAnswer>Паметта е необходимо благо за живота</IncorrectAnswer>
+                <IncorrectAnswer>Паметта отслабва, ако не я упражняваш</IncorrectAnswer>
+                <IncorrectAnswer>Лъжецът трябва да помни какво говори</IncorrectAnswer>
+              </IncorrectAnswers>
+       </Question>
      </Questions>
 </QuestionCards>

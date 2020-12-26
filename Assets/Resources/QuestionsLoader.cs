@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class QuestionsLoader : MonoBehaviour
+public class QuestionsLoader : MonoBehaviour //this class is mainly used for testing things
 {
     public string path = "Questions.xml";
 
@@ -25,4 +25,21 @@ public class QuestionsLoader : MonoBehaviour
         }
     }
 
+    public void showQuestions()
+    {
+        QuestionsContainer qc = QuestionsContainer.Load(path);
+        foreach (Question question in qc.questions)
+        {
+            print("Question:");
+            print(question.question);
+            print("Correct answer:");
+            print(question.correctAnswer);
+
+            print("Incorrrect answers: ");
+            foreach (string st in question.incorrectAnswers)
+            {
+                print(st);
+            }
+        }
+    }
 }
