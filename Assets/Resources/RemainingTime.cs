@@ -6,9 +6,10 @@ using UnityEngine.UI;
 public class RemainingTime : MonoBehaviour
 {
     public Text timeDisplay;
-    public IEnumerator changeTime()
+    public int time = 15;
+    public IEnumerator changeTime(int seconds)
     {
-        for(int i = 10; i >= 0; i--)
+        for(int i = seconds; i >= 0; i--)
         {
             timeDisplay.text = i.ToString();
             yield return new WaitForSeconds(1);

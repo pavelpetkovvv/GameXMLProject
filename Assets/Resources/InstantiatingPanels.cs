@@ -9,13 +9,12 @@ public class InstantiatingPanels : MonoBehaviour
     public GameObject canvas;
     public GameObject panelPrefab;
     public GameObject EndPanel;
-
+    public int time;
 
     // Start is called before the first frame update
     void Start()
     {
         StartCoroutine(inst());
-   
     }
 
     IEnumerator inst()
@@ -33,9 +32,9 @@ public class InstantiatingPanels : MonoBehaviour
             ct.changeMeaningText(text.TextMeaning);
 
             RemainingTime rt = newPanel.GetComponent<RemainingTime>();
-            StartCoroutine(rt.changeTime());
+            StartCoroutine(rt.changeTime(time));
 
-            yield return new WaitForSeconds(10);
+            yield return new WaitForSeconds(time+1);
         }
         EndPanel.SetActive(true);
     }

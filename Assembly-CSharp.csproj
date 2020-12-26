@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Resources\Question.cs" />
+    <Compile Include="Assets\Resources\instantiateQuestions.cs" />
     <Compile Include="Assets\Resources\QuestionPanelController.cs" />
     <Compile Include="Assets\Resources\TextsContainer.cs" />
     <Compile Include="Assets\Resources\Text_scr.cs" />
@@ -66,7 +67,8 @@
     <Compile Include="Assets\Resources\TextsLoader.cs" />
     <Compile Include="Assets\Resources\ChangeText.cs" />
     <Compile Include="Assets\Resources\InstantiatingPanels.cs" />
-    <Compile Include="Assets\Resources\instantiateQuestions.cs" />
+    <Compile Include="Assets\Resources\MainMenuControler.cs" />
+    <Compile Include="Assets\Resources\LearnController.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Resources\QuestionsVer2.xml" />

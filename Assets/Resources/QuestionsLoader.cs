@@ -8,7 +8,8 @@ public class QuestionsLoader : MonoBehaviour //this class is mainly used for tes
 
     // Start is called before the first frame update
     void Start()
-    {
+    { 
+
         QuestionsContainer qc = QuestionsContainer.Load(path);
         foreach (Question question in qc.questions)
         {

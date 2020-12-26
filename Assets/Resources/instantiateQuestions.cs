@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class instantiateQuestions : MonoBehaviour
 {
@@ -10,29 +11,51 @@ public class instantiateQuestions : MonoBehaviour
     public GameObject panelPrefab;
     public static int questionNumber = 0;
     public static bool questionsLoaded = false;
+    QuestionsContainer questionsContainer;
 
     public static Question[] qc;
+
 
     void Start()
     {
         if (!questionsLoaded)
         {
-            QuestionsContainer questionsContainer = QuestionsContainer.Load(path);
+            //loading questions from xml file
+            questionsContainer = QuestionsContainer.Load(path);
             qc = new Question[questionsContainer.questions.Count];
+
+            //puting the questions in array in order to acces them by index
             int i = 0;
             foreach (Question question in questionsContainer.questions)
             {
                 qc[i] = question;
-                //print(qc[i].question);
                 i++;
             }
             questionsLoaded = true;
+            instNewQuestion();
+            Debug.Log("Start called");
         }
+            
     }
+    
 
     public void instNewQuestion()
-    { 
-        if(questionNumber < qc.Length && QuestionPanelController.pressedButton == QuestionPanelController.correctButton)
+    {
+        Debug.Log("Question number = " + questionNumber);
+
+        if (questionNumber >= qc.Length && QuestionPanelController.pressedButton == QuestionPanelController.correctButton)
+        {
+            //reseting static variables
+            questionNumber = 0;
+            questionsLoaded = false;
+            QuestionPanelController.pressedButton = 1;
+            QuestionPanelController.correctButton = 1;
+            //instNewQuestion();
+
+            //returning to main menu
+            SceneManager.LoadScene("MainMenu");
+        }
+        if (questionNumber < qc.Length && QuestionPanelController.pressedButton == QuestionPanelController.correctButton)
         {
             GameObject newPanel = Instantiate(panelPrefab);
             newPanel.transform.SetParent(canvas.transform, false);
