@@ -1,4 +1,13 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE QuestionCards [
+        <!ELEMENT QuestionCards (Questions)*>
+        <!ELEMENT Questions (Question)*>
+        <!ELEMENT Question (QuestionText|CorrectAnswer|IncorrectAnswers)*>
+        <!ELEMENT QuestionText (#PCDATA)>
+        <!ELEMENT CorrectAnswer (#PCDATA)>
+        <!ELEMENT IncorrectAnswers (IncorrectAnswer)*>
+        <!ELEMENT IncorrectAnswer (#PCDATA)>
+        ]>
 <QuestionCards>
      <Questions>
        <Question>

@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>	
+<!DOCTYPE Cards [
+        <!ELEMENT Cards (Texts)*>
+        <!ELEMENT Texts (Text)*>
+        <!ELEMENT Text (TextPhrase|TextMeaning)*>
+        <!ELEMENT TextPhrase (#PCDATA)>
+        <!ELEMENT TextMeaning (#PCDATA)>
+        ]>
 <Cards>
    <Texts>
 	<Text>
