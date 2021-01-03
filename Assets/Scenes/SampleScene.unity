@@ -496,7 +496,7 @@ MonoBehaviour:
   canvas: {fileID: 307092930}
   panelPrefab: {fileID: 1560152062274722249, guid: 25b9646eb4764bb49bb8c1277aa28390, type: 3}
   EndPanel: {fileID: 1178424741}
-  time: 3
+  time: 15
 --- !u!4 &338352273
 Transform:
   m_ObjectHideFlags: 0

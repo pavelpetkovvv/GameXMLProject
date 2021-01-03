@@ -18,6 +18,7 @@ public class instantiateQuestions : MonoBehaviour
 
     void Start()
     {
+      
         if (!questionsLoaded)
         {
             //loading questions from xml file
@@ -33,16 +34,16 @@ public class instantiateQuestions : MonoBehaviour
             }
             questionsLoaded = true;
             instNewQuestion();
-            Debug.Log("Start called");
+            Debug.Log("Question instantioated from start");
         }
-            
+        Debug.Log("Start called");
+
     }
-    
+
 
     public void instNewQuestion()
     {
-        Debug.Log("Question number = " + questionNumber);
-
+        
         if (questionNumber >= qc.Length && QuestionPanelController.pressedButton == QuestionPanelController.correctButton)
         {
             //reseting static variables
@@ -50,18 +51,20 @@ public class instantiateQuestions : MonoBehaviour
             questionsLoaded = false;
             QuestionPanelController.pressedButton = 1;
             QuestionPanelController.correctButton = 1;
-            //instNewQuestion();
+            Debug.Log("Final question answered");
 
             //returning to main menu
             SceneManager.LoadScene("MainMenu");
         }
+        else
         if (questionNumber < qc.Length && QuestionPanelController.pressedButton == QuestionPanelController.correctButton)
         {
+
             GameObject newPanel = Instantiate(panelPrefab);
             newPanel.transform.SetParent(canvas.transform, false);
 
             int option = Random.Range(0, 4);
-            Debug.Log("Option = " + option);
+            //Debug.Log("Option = " + option);
 
             if (option == 0)
             {
